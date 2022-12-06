@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,600&display=swap");
+body,
+button,
+input,
+select,
+textarea {
+  font-family: "Roboto", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --dark-blue: #1d1d1d;
+  --ligth-grey: #bfbfbf;
+}
+
+body {
+    background-image: url("https://th.bing.com/th/id/OIP.PzzysXVGcwFUGMZAGaO5XQHaEK?pid=ImgDet&rs=1");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+h1{
+    font-size: 90px;
+    font-weight: 300;
+    margin: 0;
+}
+
+h3{
+    font-weight: 400;
+}
+
+.iphone-container {
+    
+    width: 300px;
+    height: 700px;
+    background: var(--dark-blue);
+    border-radius: 45px;
+    border: 20px solid #111;
+    position: relative;
+    color: white;
+    text-align: center;
+    padding: 100px 20px 40px ;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .iphone-container .notch {
+    width: 180px;
+    height: 25px;
+    background: #111;
+    border-radius: 0 0 30px 30px;
+    position: absolute;
+    top: 0;
+    left: calc(50% - 90px);
+  }
+
+  .iphone-container .iphone-menu {
+    width: 90px;
+    background: var(--ligth-grey);
+    height: 2px;
+    border-radius: 8px;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 20px;
+    left: calc(50% - 45px);
+  }
+
+  .iphone-container .top-icon{
+    width: 50px;
+    height: 50px;
+  }
+
+  .iphone-container .city-name{
+    font-weight: 300;
+    color: var(--ligth-grey);
+  }
+
+  .iphone-container .week{
+    display: flex;
+    justify-content: space-between;
+    
+  }
+
+  .iphone-container .week .day{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .iphone-container .week .day .temperature{
+    margin: 7px;
+    font-weight: 300;
+    font-size: 14px;
+
+  }
+
+  .iphone-container .week .day .week-day{
+    font-weight: 300;
+    font-size: 15px;
+  }
+  
+  .iphone-container .footer{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .iphone-container .footer svg{
+    width: 30px;
+    height: 30px;
+  }
